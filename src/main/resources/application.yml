@@ -1,0 +1,13 @@
+server:
+  port: 80
+
+spring:
+  redis:
+    cluster:
+      nodes: 192.168.43.117:7000,192.168.43.117:7001,192.168.43.36:7000,192.168.43.36:7001,192.168.43.96:7000,192.168.43.96:7001
+    lettuce:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
